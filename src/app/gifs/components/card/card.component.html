@@ -1,0 +1,13 @@
+<!-- card-component -->
+<div class="card mb-2 bg-dark text-center" style=" height: 18rem;">
+  <!-- <img [src]="gif.images.downsized_medium.url" [alt]="gif.title"
+    class="card-image-top"
+  > -->
+  <shared-lazy-image [imageUrl]="gif.images.downsized_medium.url" [alt]="gif.title || 'No name' " ></shared-lazy-image>
+  <div class="card-body">
+    <div class="card-text text-white">
+      <p>{{gif.title || 'No title'}}</p>
+    </div>
+  </div>
+</div>
+<!--  -->
